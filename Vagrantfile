@@ -14,7 +14,7 @@ config.vm.define "db1" do |db|
   db.vm.hostname = "pg13-mysql80-db1.dev"
   db.vm.box = "https://cloud.centos.org/centos/7/vagrant/x86_64/images/CentOS-7-x86_64-Vagrant-1804_02.VirtualBox.box"
   db.vm.network :private_network, ip: "192.168.60.5"
-  db.vm.provision :shell, :path => "master.sh"
+  db.vm.provision :shell, :path => "primary.sh"
 end
 
 end
